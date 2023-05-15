@@ -2,10 +2,11 @@ Usage:
 `$ python3 main.py`
 
 Application first displays a word in Swahili
-![swahili-word](https://github.com/MilanGrujicic/Swahili_Flashcard/assets/48260426/d763a743-d823-4bfb-b312-3d93061c977f)
+![Screenshot_2023-05-15_22-24-47](https://github.com/MilanGrujicic/Swahili_Flashcard/assets/48260426/2252729d-87bb-4acf-bd94-9296f848d747)
+
 
 After 4 seconds, the card flips, showing its translation in English
-![english-word](https://github.com/MilanGrujicic/Swahili_Flashcard/assets/48260426/f7fd878d-88bf-4e2e-958a-138da0722f40)
+![Screenshot_2023-05-15_22-25-00](https://github.com/MilanGrujicic/Swahili_Flashcard/assets/48260426/5b068b8f-181f-408e-aa03-6cc54f36e2b1)
 
 The user can then either select the green or red button.
 
