@@ -1,5 +1,5 @@
 from tkinter import *
-import pandas
+import pandas 
 import random
 
 BACKGROUND_COLOR = "#B1DDC6"
@@ -18,8 +18,8 @@ else:
 
 # FUNCTIONS
 
-
 def next_card():
+    '''Displays a random swahili word.'''
     global current_card, flip_timer
     window.after_cancel(flip_timer)
     current_card = random.choice(to_learn)
@@ -28,19 +28,18 @@ def next_card():
     canvas.itemconfig(card_background, image=card_front_img)
     flip_timer = window.after(4000, func=flip_card)
 
-
 def flip_card():
-    canvas.itemconfig(card_title, text="English", fill="white")
+    '''If no button is clicked after 4 seconds, show the meaning of the swahili word.'''
+    canvas.itemconfig(card_title, text="English", fill= "white")
     canvas.itemconfig(card_word, text=current_card["English"], fill="white")
     canvas.itemconfig(card_background, image=card_back_img)
 
-
 def is_known():
+    '''Handles data when the user knows the given word.'''
     to_learn.remove(current_card)
     data = pandas.DataFrame(to_learn)
     data.to_csv("data/words_to_learn.csv", index=False)
     next_card()
-
 
 # USER INTERFACE
 
